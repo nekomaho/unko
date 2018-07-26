@@ -14,6 +14,12 @@
 		60CDE1B720DB7A3E004DC4FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CDE1B520DB7A3E004DC4FE /* LaunchScreen.storyboard */; };
 		60CDE1C220DB7A3E004DC4FE /* unkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CDE1C120DB7A3E004DC4FE /* unkoTests.swift */; };
 		60CDE1CD20DB7A3E004DC4FE /* unkoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CDE1CC20DB7A3E004DC4FE /* unkoUITests.swift */; };
+		60CDE1E720DBE01F004DC4FE /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CDE1E620DBE01F004DC4FE /* APIKit.framework */; };
+		60CDE1E820DBE01F004DC4FE /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60CDE1E620DBE01F004DC4FE /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60CDE1EB20DBE02D004DC4FE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CDE1EA20DBE02D004DC4FE /* Result.framework */; };
+		60CDE1EC20DBE02D004DC4FE /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60CDE1EA20DBE02D004DC4FE /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60CDE1EE20DC6991004DC4FE /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CDE1ED20DC6990004DC4FE /* Himotoki.framework */; };
+		60CDE1EF20DC6991004DC4FE /* Himotoki.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60CDE1ED20DC6990004DC4FE /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		60CDE1E920DBE01F004DC4FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60CDE1E820DBE01F004DC4FE /* APIKit.framework in Embed Frameworks */,
+				60CDE1EC20DBE02D004DC4FE /* Result.framework in Embed Frameworks */,
+				60CDE1EF20DC6991004DC4FE /* Himotoki.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		60CDE1A920DB7A3C004DC4FE /* unko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CDE1AC20DB7A3C004DC4FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +69,11 @@
 		60CDE1C820DB7A3E004DC4FE /* unkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CDE1CC20DB7A3E004DC4FE /* unkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unkoUITests.swift; sourceTree = "<group>"; };
 		60CDE1CE20DB7A3E004DC4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60CDE1DE20DBD324004DC4FE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		60CDE1E220DBD333004DC4FE /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		60CDE1E620DBE01F004DC4FE /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		60CDE1EA20DBE02D004DC4FE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		60CDE1ED20DC6990004DC4FE /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CDE1E720DBE01F004DC4FE /* APIKit.framework in Frameworks */,
+				60CDE1EB20DBE02D004DC4FE /* Result.framework in Frameworks */,
+				60CDE1EE20DC6991004DC4FE /* Himotoki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +107,11 @@
 		60CDE1A020DB7A3C004DC4FE = {
 			isa = PBXGroup;
 			children = (
+				60CDE1ED20DC6990004DC4FE /* Himotoki.framework */,
+				60CDE1EA20DBE02D004DC4FE /* Result.framework */,
+				60CDE1E620DBE01F004DC4FE /* APIKit.framework */,
+				60CDE1E220DBD333004DC4FE /* SwiftyJSON.framework */,
+				60CDE1DE20DBD324004DC4FE /* Alamofire.framework */,
 				60CDE1AB20DB7A3C004DC4FE /* unko */,
 				60CDE1C020DB7A3E004DC4FE /* unkoTests */,
 				60CDE1CB20DB7A3E004DC4FE /* unkoUITests */,
@@ -135,6 +170,8 @@
 				60CDE1A520DB7A3C004DC4FE /* Sources */,
 				60CDE1A620DB7A3C004DC4FE /* Frameworks */,
 				60CDE1A720DB7A3C004DC4FE /* Resources */,
+				60CDE1E520DBD362004DC4FE /* ShellScript */,
+				60CDE1E920DBE01F004DC4FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +287,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60CDE1E520DBD362004DC4FE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60CDE1A520DB7A3C004DC4FE /* Sources */ = {
@@ -431,6 +487,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = unko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +508,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = unko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
